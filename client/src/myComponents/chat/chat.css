@@ -1,0 +1,137 @@
+.body{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .join-div{
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #cc0099 0%, #ff99cc 100%);
+    border:2px solid white;
+    border-radius: 10px;
+  }
+  .join-header{
+    color: white;
+    margin: 40px 0px;
+    font-size: 60px;
+  }
+  .join-inp{
+    width: 70%;
+    height: 8%;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 20px;
+    margin: 20px 0px;
+    border: 0px;
+    border-bottom: 2px solid purple;
+    background: none;
+    text-align: center;
+    color: white;
+  }
+  .join-inp::placeholder{
+    color: rgba(255, 255, 255, 0.527);
+  }
+  .join-inp:focus{
+    outline: none;
+  }
+  .join-btn{
+    width: 40%;
+    height: 7%;
+    border: 1px solid purple;
+    background-color: purple;
+    color: white;
+    font-size: 18px;
+    border: 1px solid purple;
+    border-radius: 4px;
+    margin:20px 0px;
+  }
+  .join-btn:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+  .chat-div{
+    width:50vw;
+    height: 90vh;
+    background: linear-gradient(to right, #ff99cc -5%, #ffffcc 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-bottom: 90px;
+  }
+  .messages{
+    width: 96%;
+    height: 80%;
+    margin: 20px;
+    margin-bottom: -10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  .chat-input-div{
+    height: 16%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .message-inp{
+    width: 76%;
+    height: 40%;
+    border-radius: 4px;
+    padding: 0px 6px;
+    font-size: 20px;
+    border: 0px;
+    border-bottom: 2px solid purple;
+    background: none;
+    color: purple;
+  }
+  .message-inp:focus{
+    outline: none;
+  }
+  .message-btn{
+    width: 19%;
+    height: 40%;
+    background-color: purple;
+    color: white;
+    font-size: 18px;
+    border: 1px solid purple;
+    border-radius: 10px;
+  }
+  .message-btn:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  .sent-message{
+    background-color: purple;
+    color: white;
+    padding: 4px;
+    border:1px solid purple;
+    border-radius: 4px;
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 6px;
+  }
+  .received-message{
+    background-color: white;
+    color: purple;
+    padding: 4px;
+    border:1px solid white;
+    border-radius: 4px;
+    width: fit-content;
+    margin-top: 6px;
+  }
+  @media only screen and (max-width: 960px) {
+    .chat-div{
+      width: 100vw;
+    }
+  }
